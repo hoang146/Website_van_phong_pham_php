@@ -1,0 +1,8 @@
+{
+    "name": "asus/website-van-phong-pham",
+    "require": {
+        "google/apiclient": "^2.0",
+        "phpmailer/phpmailer": "^7.0",
+        "pragmarx/google2fa": "^9.0"
+    }
+}

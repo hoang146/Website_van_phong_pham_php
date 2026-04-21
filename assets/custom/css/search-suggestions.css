@@ -1,0 +1,44 @@
+/* UI đẹp cho dropdown gợi ý tìm kiếm */
+
+
+#search-suggestions {
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  background: #fff;
+  overflow-y: auto;
+  max-height: 110px;
+  min-width: 120px;
+  width: 180px;
+  border: 1px solid #e0e0e0;
+  transition: box-shadow 0.2s;
+  font-size: 0.93rem;
+}
+#search-suggestions .list-group-item {
+  border: none;
+  padding: 3px 6px;
+  font-size: 0.93rem;
+  cursor: pointer;
+  transition: background 0.15s;
+  display: flex;
+  align-items: center;
+  min-height: 28px;
+  gap: 4px;
+}
+#search-suggestions .list-group-item:hover,
+#search-suggestions .list-group-item.active {
+  background: #f2f2f2;
+}
+#search-suggestions img {
+  width: 18px;
+  height: 18px;
+  object-fit: cover;
+  border-radius: 3px;
+  margin-right: 4px;
+  border: 1px solid #e0e0e0;
+}
+#search-suggestions .no-result {
+  color: #888;
+  text-align: center;
+  padding: 4px 0;
+  font-size: 0.92rem;
+}

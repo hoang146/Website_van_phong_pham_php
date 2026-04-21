@@ -1,0 +1,98 @@
+/* Toast thông báo thành công */
+.custom-toast {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+  z-index: 9999;
+  min-width: 280px;
+  background: #198754;
+  color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  padding: 16px 24px;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  animation: fadeInToast 0.5s;
+}
+.custom-toast .fa-check-circle {
+  font-size: 1.5rem;
+}
+@keyframes fadeInToast {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+/* Style riêng cho dashboard admin */
+.card {
+  border-radius: 12px !important;
+}
+.dashboard-stat-card {
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.dashboard-stat-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+  transform: translateY(-4px) scale(1.03);
+}
+.dashboard-feature-card {
+  border-radius: 12px;
+  transition: box-shadow 0.3s, transform 0.3s;
+  border: none;
+}
+.dashboard-feature-card:hover {
+  box-shadow: 0 8px 24px rgba(13,110,253,0.12);
+  transform: translateY(-4px) scale(1.03);
+}
+
+/* Style cho footer luôn ở dưới */
+footer {
+  margin-top: auto !important;
+  width: 100%;
+}
+
+.sidebar {
+  background: #111;
+  color: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+}
+.sidebar .nav-link {
+  color: #fff !important;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 12px 16px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+.sidebar .nav-link.active,
+.sidebar .nav-link:hover {
+  background: #ffd700;
+  color: #000 !important;
+  transform: translateX(5px);
+  box-shadow: 0 4px 8px rgba(255,215,0,0.3);
+}
+.sidebar .nav-link i {
+  width: 20px;
+  text-align: center;
+}
+.navbar {
+  background: #111;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+.navbar .navbar-brand {
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #ffd700 !important;
+  letter-spacing: 1px;
+}
+.navbar .btn-outline-light {
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 6px 18px;
+}
+@media (max-width: 991px) {
+  aside { display:none; }
+  main { padding-left:0 !important; }
+}
